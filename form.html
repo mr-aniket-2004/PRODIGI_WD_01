@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <nav class="navbar h-nav">
+
+        <div class="logo"><a href="#">ExploreBharat</a></div>
+        <div class="navlist v-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="sidepages/place.html">Places</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="sidepages/blog.html">Blogs</a></li>
+                <li><a href="sidepages/contactus.html">Contact us</a></li>
+                <li><a href="#" id="sign" class="login-btn">Login</a></li>
+            </ul>
+            <a href=""><img src="homepage-img/sign-in.png" alt="" id="sign-in"></a>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="index">
+        <div class="main">
+            <div class="form">
+                <form action="" class="from">
+
+                    <h2>Finding Destinations..</h2>
+                    <div class="half-1">
+                        <div class="cont">
+                            <span class="icon"><ion-icon name="location-sharp"></ion-icon></span>
+                            <label for="a">FROM :</label><br>
+                            <input type="text" name="" id="a">
+                        </div>
+                        <div class="cont">
+                            <span class="icon"><ion-icon name="location-sharp"></ion-icon></span>
+                            <label for="b">TO :</label><br>
+                            <select name="" id="b">
+                                <option value="to-destionation">select</option>
+                                <option value="to-destionation">Golden Temple</option>
+                                <option value="to-destionation">Taj Mahal</option>
+                                <option value="to-destionation">Baga Beach</option>
+                                <option value="to-destionation">Qutub Minar</option>
+                                <option value="to-destionation">Andretti</option>
+                                <option value="to-destionation">Red Fort</option>
+                                <option value="to-destionation">Kedarnath Temple</option>
+                                <option value="to-destionation">Leh Ladakh</option>
+                                <option value="to-destionation">Alibaug Beach</option>
+                                <option value="to-destionation">Sri Venkateswara Temple</option>
+                                <option value="to-destionation">Lonavala</option>
+                                <option value="to-destionation">Ram Mandir</option>
+                                <option value="to-destionation">Ellora Caves</option>
+                                <option value="to-destionation">Ooty</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="half-2">
+                        <div class="cont">
+                            <span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
+                            <label for="c">DEPARTURE:</label><br>
+                            <input type="date" name="" id="c">
+                        </div>
+                        <div class="cont">
+                            <span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
+                            <label for="d">ARRIVAL :</label><br>
+                            <input type="date" name="" id="d">
+                        </div>
+                    </div>
+                    <div class="half-3">
+                        <div class="last">
+                            <div>
+                                <input type="radio" name="trip" id="an">
+                                <label for="an">One-way</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="trip" id="ann">
+                                <label for="ann">Round-on</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="Submit" id="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tag">
+            <h1>MAKE YOUR PLAN OF HAPPINESS</h1>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        navlist = document.querySelector('.navlist')
+
+        burger.addEventListener('click', () => {
+            navlist.classList.toggle('v-nav');
+            navbar.classList.toggle('h-nav');
+        })
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

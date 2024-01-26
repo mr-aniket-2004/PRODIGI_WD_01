@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreBharat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar h-nav">
+
+        <div class="logo"><a href="#">ExploreBharat</a></div>
+        <div class="navlist v-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="sidepages/place.html">Places</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="sidepages/blog.html">Blogs</a></li>
+                <li><a href="sidepages/contactus.html">Contact us</a></li>
+                <li><a href="#" id="sign" class="login-btn">Login</a></li>
+            </ul>
+            <a href=""><img src="homepage-img/sign-in.png" alt="" id="sign-in"></a>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="title">
+            <p>DISCOVER THE COLORFULL INDIA....</p>
+            <h1>NEW ADVENTURE !</h1>
+            <p class="info">
+                Our comprehensive travel guide provides everything you need to plan your perfect Indian getaway. From
+                accommodation options to transportation tips, we've got you covered every step of the way, ensuring a
+                seamless and memorable journey.
+            </p>
+            <div class="btn">
+                <a href="form.html"><input type="button" value="Book Now" id="btn"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        navlist = document.querySelector('.navlist')
+
+        burger.addEventListener('click', () => {
+            navlist.classList.toggle('v-nav');
+            navbar.classList.toggle('h-nav');
+        })
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
