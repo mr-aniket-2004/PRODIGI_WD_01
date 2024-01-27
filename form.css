@@ -3,13 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-image: url(bg1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
+
 .navbar {
     /* margin-top: 20px; */
     height: 50px;
@@ -18,7 +20,7 @@ body{
     top: 0;
     right: 0;
     /* background-color: white; */
-    border-radius: 5px;
+    /* border-radius: 5px; */
     z-index: 99;
     /* border: 2px solid red; */
 }
@@ -57,7 +59,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.logo>a{
+
+.logo>a {
     text-decoration: none;
     font-size: 2rem;
     color: white;
@@ -80,14 +83,14 @@ body{
 .navlist ul a {
     position: relative;
     text-decoration: none;
-    color:white;
+    color: white;
     font-size: 20px;
     margin: 20px;
     width: 50%;
 }
 
-.navlist ul a:hover{
-    color:#E55604;
+.navlist ul a:hover {
+    color: #E55604;
 }
 
 .navlist ul a::after {
@@ -143,10 +146,11 @@ body{
     margin: 5px 5px;
 }
 
-.index{
+.index {
     display: flex;
 }
-.main{
+
+.main {
     width: 450px;
     height: 400px;
     display: flex;
@@ -159,66 +163,78 @@ body{
     border-radius: 20px;
 }
 
-.form h2{
+.form h2 {
     font-size: 2.1rem;
     margin: 20px;
     font-family: cursive;
 }
-.half-1{
+
+.half-1 {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 20px;
 }
-.half-1 label{
+
+.half-1 label {
     margin: 5px;
 }
-.half-1 input{
+
+.half-1 input {
     width: 180px;
     height: 25px;
     border: none;
     border-radius: 20px;
 }
-.half-1 select{
+
+.half-1 select {
     width: 180px;
     height: 25px;
     border: none;
     border-radius: 20px;
 }
-.half-2{
+
+.half-2 {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 20px;
 }
-.half-2 label{
+
+.half-2 label {
     margin: 5px;
     margin-bottom: 10px;
 }
-.half-2 input{
+
+.half-2 input {
     width: 180px;
     height: 25px;
     border: none;
     border-radius: 20px;
 }
-.half-3{
+
+.half-3 {
     margin-bottom: 20px;
 }
-.last{
+
+.last {
     display: flex;
     justify-content: space-evenly;
 }
-.last input{
+
+.last input {
     font-size: 5rem;
 }
-.last label{
+
+.last label {
     font-size: 1.2rem;
 }
-.btn{
+
+.btn {
     text-align: center;
     margin: 20px;
     padding: 20px;
 }
 
-#btn{
+#btn {
     width: 170px;
     height: 30px;
     border-radius: 50px;
@@ -229,15 +245,16 @@ body{
     font-size: 1.2rem;
     transition: all .2s ease-in-out;
 }
-#btn:hover{
-    border:1px solid white;
-    background-color:rgba(225, 220, 220, 0.5);
+
+#btn:hover {
+    border: 1px solid white;
+    background-color: rgba(225, 220, 220, 0.5);
     color: black;
     /* font-weight: 600; */
     font-size: 1.2rem;
 }
 
-.tag{
+.tag {
     /* border: 2px solid red; */
     width: 550px;
     height: 400px;
@@ -248,7 +265,8 @@ body{
     border-radius: 20px;
     padding: 10px;
 }
-.tag>h1{
+
+.tag>h1 {
     font-size: 3rem;
     font-family: cursive;
     margin-bottom: 20px;
@@ -260,7 +278,7 @@ body{
         height: 250px;
         /* border: 2px solid red; */
         transition: all 0.4s ease-out;
-        background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(0, 0, 0, 0.68);
     }
 
     .logo {
@@ -294,7 +312,7 @@ body{
 
     .navlist ul li a {
         color: white;
-        
+
     }
 
     .burger {
@@ -309,8 +327,88 @@ body{
     .v-nav {
         opacity: 0;
     }
-    .index{
+
+    .index {
         display: block;
     }
 
+    .main {
+        position: fixed;
+        top: 10%;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .main {
+        width: 400px;
+        position: fixed;
+        top: 10%;
+    }
+
+    .half-1 {
+        display: bl;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .main {
+        margin-left: 10px;
+        position: fixed;
+        top: 10%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .main {
+        margin-left: 10px;
+        position: fixed;
+        top: 10%;
+        width: 350px;
+        height: 500px;
+    }
+    .half-1>.cont{
+        margin: 20px;
+    }
+    .half-1 {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .half-1 label {
+        margin-bottom: 10px;
+    }
+
+    .half-1 input {
+        width: 250px;
+        height: 25px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .half-1 select {
+        width: 250px;
+        height: 25px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .half-2>.cont{
+        margin: 20px;
+    }
+    .half-2 {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .half-2 label {
+        margin-bottom: 10px;
+    }
+
+    .half-2 input {
+        width: 250px;
+        height: 25px;
+        border: none;
+        border-radius: 20px;
+    }
 }
